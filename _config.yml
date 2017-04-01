@@ -1,41 +1,17 @@
-title: Artamoshkin Maxim · Blog
 # Site settings
+title: Artamoshkin Maxim
 email: admin@zverit.com
 description: > # this means to ignore newlines until "baseurl:"
-  Добро пожаловать на блог fullstack-разработчика. 
-  </br>
-  Здесь я пишу в основном о веб-разработке, в частности
-  о ASP.NET, С<span>#</span>, JavaScript, Angular. 
-  </br>А также об околокодинговых темах. 
+  Artamoshkin Maxim. Web and System software engineer. I don' t know the word «Impossible». Only «small budget» or «uninteresting job».
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.zverit.com" # the base hostname & protocol for your site
-twitter_username: zverit 
-github_username:  Zverit
+url: "https://zverit.com" # the base hostname & protocol for your site
 
-permalink: pretty
- 
-safe: true
-
-paginate: 6
-
-gems: 
-  - jekyll-sitemap 
-  - jekyll-feed
-  
-# Build settings
+# Build settings  
 markdown: kramdown
 
-url: https://blog.zverit.com   # with the https protocol
-enforce_ssl: blog.zverit.com   # without any protocol
+gems:
+  - jekyll-sitemap
 
-jekyll-archives:
-  enabled:
-  - year
-  - month
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+
+url: https://zverit.com   # with the https protocol
+enforce_ssl: zverit.com   # without any protocol

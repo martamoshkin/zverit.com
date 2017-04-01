@@ -1,13 +1,13 @@
 /**
  * Reset some basic elements
  */
-
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
+
 
 
 /**
@@ -23,6 +23,13 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    font-size: $base-font-size;
+        background-color: #fdfdfd;
+}
+
+
+p {
+	text-align: justify;
 }
 
 
@@ -37,6 +44,7 @@ ul, ol, dl, figure,
 }
 
 
+
 /**
  * Images
  */
@@ -49,9 +57,6 @@ img {
   text-align: center;
 }
 
-.right {
-  text-align: right;
-}
 /**
  * Figures
  */
@@ -62,6 +67,8 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
+
+
 
 /**
  * Lists
@@ -86,6 +93,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
+
+
 /**
  * Links
  */
@@ -102,10 +111,7 @@ a {
     }
 }
 
-article{
-    border-bottom: 1px solid #8e8e8e;
-    margin-bottom: 25px;
-}
+
 
 /**
  * Blockquotes
@@ -120,14 +126,17 @@ blockquote {
     }
 }
 
+
+
 /**
  * Code formatting
  */
 pre,
 code {
     font-size: 15px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid $grey-color-light;
     border-radius: 3px;
+    background-color: #eef;
 }
 
 code {
@@ -144,6 +153,8 @@ pre {
         padding-left: 0;
     }
 }
+
+
 
 /**
  * Wrapper
@@ -165,6 +176,8 @@ pre {
     }
 }
 
+
+
 /**
  * Clearfix
  */
@@ -176,6 +189,8 @@ pre {
         clear: both;
     }
 }
+
+
 
 /**
  * Icons

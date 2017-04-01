@@ -34,8 +34,6 @@ build-iPhoneSimulator/
 /_yardoc/
 /doc/
 /rdoc/
-/.sass-cache
-/._site
 
 ## Environment normalization:
 /.bundle/
@@ -50,3 +48,7 @@ build-iPhoneSimulator/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+.sass-cache/
+.jekyll-metadata
+/_site
