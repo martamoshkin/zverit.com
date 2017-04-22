@@ -23,9 +23,9 @@
  }
  
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+	    background: #fff;
+	    box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    min-height: 40px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -356,12 +356,19 @@
 		float: right;
 		padding-right: 25px;
 		left: -5px;
+		margin-top: 20px;
 		position: relative;
 		padding-top: 0;
 	}
 
 	div.page {
-		margin-bottom: 0;
+	    margin-bottom: 15px;
+	}
+
+	.page {
+		padding: 15px 45px 22px 45px;
+	    background: #fff;
+	    box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 	}
 
 	div.page_content {
