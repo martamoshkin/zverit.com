@@ -240,10 +240,10 @@
 .skill-tag{
     display: inline-block;
     border: 1px solid #3d3d3d;
-    padding: 0 .5rem;
-    margin-right: .5rem;
+    padding: 0 5px;
+    margin-right: 5px;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 4px;
     font-family: monospace;
     -webkit-transition: all 0.1s ease-in-out;
@@ -894,6 +894,10 @@
 	.fa{
 		font-size: 22px;
 	}
+}
+
+.jotform-form {
+	padding: 0 15px!important;
 }
 
 .form-label-left{ width:150px !important; } .form-line{ padding-top:12px; padding-bottom:12px; } .form-label-right{ width:150px !important; } .form-all{ width:1000px; color:Black !important;  } .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{ color: Black; } 
