@@ -1,0 +1,25 @@
+.contact {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	color: $grey-color-dark;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 14px;
+	text-indent: 0;
+	
+	&__link {
+		display: block;
+		float: right;
+		color: $grey-color-dark;
+		padding-left: 20px;
+	}
+
+	&__type {
+		display: inline-block;
+		height: auto;
+		text-decoration: none;
+		width: auto;
+		font-size: 16px;
+		padding-left: 10px;
+		text-transform: uppercase;
+	}
+}

@@ -1,9 +1,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<script src="https://code.jquery.com/jquery-2.0.0.min.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<script type="text/javascript">
 		var host = "zverit.com";
@@ -12,19 +10,19 @@
 	</script> 
 
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta name="truvisibility-site-verification" content="6a6f7b55-86c9-41d6-ba0b-93f6b357133e">
-
 	<meta name="Artamoshkin Maxim" content="Web and System Programmer">
 
 	<link rel="canonical" href="http://zverit.com{{ page.url }}" />
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" id="bluth-googlefonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%7CArimo%3A400%2C400italic%2C700%2C700italic%7CArimo%3A400%2C700%7CRoboto+Slab%3A400&amp;subset=latin%2Ccyrillic&amp;ver=4.7.4" type="text/css" media="all">
+
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
-	<link rel="stylesheet" id="bluth-googlefonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%7CArimo%3A400%2C400italic%2C700%2C700italic%7CArimo%3A400%2C700%7CRoboto+Slab%3A400&amp;subset=latin%2Ccyrillic&amp;ver=4.7.4" type="text/css" media="all">
-	<link rel="stylesheet" id="bluth-googlefonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%7CArimo%3A400%2C400italic%2C700%2C700italic%7CArimo%3A400%2C700%7CRoboto+Slab%3A400&amp;subset=latin%2Ccyrillic&amp;ver=4.7.4" type="text/css" media="all">
+
+  <link rel="publisher" href="https://plus.google.com/b/114908284667574282591" />
 </head>
