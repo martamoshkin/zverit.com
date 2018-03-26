@@ -1,6 +1,17 @@
 <header class="site-header">
-  <div class="wrapper">
-    <a class="site-header__site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-	<a class="site-header__blog-link" href="http://blog.zverit.com">BLOG</a>
-  </div>
+	<div class="wrapper">
+		<a class="site-header__site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+		{% if page.language == 'ru' %}
+		<a class="site-header__blog-link" href="http://blog.zverit.com">БЛОГ</a>
+		{% else if page.language == 'en' %}
+		<a class="site-header__blog-link" href="http://blog.zverit.com">BLOG</a>
+			{% endif %}
+
+		{% if page.language == 'ru' %}
+		<a class="site-header__lang-link" href="{{ site.baseurl }}/en"><i class="fa fa-globe icon"></i>ENG</a>
+		{% else if page.language == 'en' %}
+		<a class="site-header__lang-link" href="{{ site.baseurl }}/"><i class="fa fa-globe icon"></i>RUS </a>
+		{% endif %}
+	</div>
 </header>
