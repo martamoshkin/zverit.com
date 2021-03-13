@@ -40,7 +40,7 @@
 
 .form-label {
   font-family: $base-font-family;
-  font-size: 1rem;
+  font-size: $font-size-sm;
   color: $text-color;
   padding-top: 15px;
   text-transform: uppercase;
@@ -117,12 +117,13 @@
 .form-label-left,
 .form-label-right,
 .form-html {
-  color: #000000;
+  color: $grey-color;
+  margin-bottom: .375rem!important;
 }
 
 .form-checkbox-item label,
 .form-radio-item label {
-  color: #1a1a1a;
+  color: $gray-500;
 }
 
 .form-line.form-line-active {
@@ -209,6 +210,7 @@
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  box-shadow: none;
 }
 
 .form-all .form-textarea {
@@ -222,7 +224,11 @@
 .form-all .form-submit-reset,
 .form-all .form-submit-print {
   font-size: 1em;
-  padding: 9px 15px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid $form-border-color;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
 }
@@ -242,7 +248,6 @@
   font-size: 1rem;
   padding: 9px 15px;
   font-family: $base-font-family;
-  font-size: 13px;
   font-weight: $font-weight-normal;
 }
 
@@ -284,8 +289,7 @@ h2 ~ .form-subHeader {
 
 .form-textbox,
 .form-textarea {
-  border-color: $gray-500;
-  padding: 4px 3px 2px 3px;
+  border-color: $form-border-color !important;
 }
 
 .form-textbox,
@@ -303,7 +307,7 @@ h2 ~ .form-subHeader {
 }
 
 .form-buttons-wrapper {
-  margin-left: 0 !important;
+  margin: 0 !important;
   text-align: right !important;
 }
 
@@ -327,51 +331,27 @@ li[data-type="control_image"] img {
 }
 
 .form-line-error {
-  background-color: none;
-  -webkit-box-shadow: inset 0px 3px 11px -7px #9a9a9a;
+  background-color: $white !important;
 }
 
-.form-line-error input:not(#coupon-input),
-.form-line-error textarea,
-.form-line-error .form-validation-error {
-  -webkit-transition-property: none;
-  -moz-transition-property: none;
-  -ms-transition-property: none;
-  -o-transition-property: none;
-  transition-property: none;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -ms-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-  border: 1px solid #fff8f8;
-  -moz-box-shadow: 0 0 3px #fff8f8;
-}
 
 .form-line-error .form-error-message {
   margin: 0;
-  position: absolute;
-  color: #fff;
+  color: $white;
   display: inline-block;
-  right: 0;
   font-size: 10px;
   position: absolute !important;
   box-shadow: none;
   top: 0px;
   line-height: 20px;
-  color: #FFF;
   background: #9a9a9a;
   padding: 0px 5px;
-  bottom: auto;
   min-width: 105px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  right: 180px!important;
+  bottom: 5px!important;
 }
 
 .form-line-error .form-error-message img,
@@ -405,7 +385,6 @@ li[data-type="control_image"] img {
     width: 100% !important;
   }
   .form-line {
-    padding: 2% 5%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -455,6 +434,16 @@ li[data-type="control_image"] img {
 
 #input_17 {
   max-width: 100%;
+  width: 97%;
+}
+
+#input_16, #input_17 {
+  box-shadow: none !important;
+  border: 1px solid $form-border-color;
+  border-radius: 3px;
+  &:focus, &:active {
+    outline: none;
+  }
 }
 
 #cid_19 {
@@ -468,9 +457,28 @@ li[data-type="control_image"] img {
 }
 
 .form-captcha {
+  display: flex;
+  width: 100%!important;
+  background-color: $white !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 3px !important;
+
   img {
     filter: grayscale(100%);
   }
+}
+
+.form-captcha-image {
+  border: 1px solid $form-border-color !important;
+}
+
+#input_19 {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  border: 1px solid $form-border-color !important;
+  border-radius: 3px !important;
+  line-height: 1.371rem!important;
 }
 
 .form-required {
