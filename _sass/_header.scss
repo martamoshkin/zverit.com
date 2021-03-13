@@ -5,7 +5,7 @@
 	position: relative;
 
 	&__blog-link {
-		//font-size: $font-size-lg;
+		font-size: 1rem;
 		line-height: 40px;
 		margin-bottom: 0;
 		float: right;
@@ -34,10 +34,6 @@
 		text-decoration: none;
 		color: $text-color;
 
-		.icon {
-			margin-right: 5px;
-		}
-
 		&:visited {
 			color: $grey-color-dark;
 		}
@@ -48,7 +44,7 @@
 	}
 
 	&__site-title {
-		font-size: $font-size-lg;
+		font-size: $site-title-font-size;
 		font-weight: 300;
 		line-height: 40px;
 		letter-spacing: -1px;
