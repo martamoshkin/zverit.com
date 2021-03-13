@@ -3,8 +3,6 @@
 	float: right;
 	margin-top: 20px;
 	position: relative;
-	padding-top: 0;
-
 	padding-top: 10px;
 	display: block;
 	width: auto;
@@ -39,13 +37,6 @@ input, textarea, button {
 ol li {
 	list-style: decimal inside;
 	padding: 5px 0;
-}
-
-blockquote {
-	border-left: 5px solid #A7C4D7;
-	font-style: italic;
-	padding: 10px;
-	margin: 20px;
 }
 
 .no-padding {

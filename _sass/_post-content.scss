@@ -2,7 +2,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: $h2-font-size;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -10,7 +10,7 @@
     }
 
     h3 {
-        font-size: 24px;
+        font-size: $h3-font-size;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -18,7 +18,7 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: $h4-font-size;
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -45,6 +45,6 @@
 
     .post-link {
         display: block;
-        font-size: 24px;
+        font-size: $font-size-lg;
     }
 }

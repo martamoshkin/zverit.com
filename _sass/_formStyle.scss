@@ -1,8 +1,7 @@
 .form-all {
   list-style: none;
   list-style-position: outside;
-  margin: 0px;
-  font-family: Verdana;
+  margin: 0;
   font-size: 12px
 }
 
@@ -33,7 +32,7 @@
 
 .form-list {
   padding: 3px;
-  border: 1px solid #CCC;
+  border: 1px solid $grey-color;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset
@@ -68,7 +67,7 @@
 }
 
 .form-textarea-limit-indicator {
-  color: #666;
+  color: $grey-color;
   font-size: 9px;
   margin-top: -1px;
   padding: 2px;
@@ -91,16 +90,8 @@
   white-space: normal
 }
 
-.form-datetime-validation-error {
-  background: #FAA;
-  color: #fff
-}
-
-.form-collapse-left {
-}
-
 .form-collapse-mid {
-  text-shadow: 0px 2px 0px #fff;
+  text-shadow: 0 2px 0 $white;
   float: left;
   font-size: 18px;
   margin: 16px 45px 16px 20px
@@ -121,19 +112,6 @@
   -moz-border-radius: 3px 3px;
   -webkit-border-radius: 3px 3px;
   border-radius: 3px 3px
-}
-
-.form-product-custom_price {
-  text-align: right;
-  width: 30px;
-  border: 1px solid gray;
-  margin: 0 2px;
-  padding: 2px 4px
-}
-
-.hover-product-item:hover {
-  background: #f5f5f5;
-  color: #000
 }
 
 .form-product-item label,
@@ -166,8 +144,8 @@
 .form-radio,
 .form-checkbox {
   vertical-align: middle;
-  margin: 0px;
-  padding: 0px
+  margin: 0;
+  padding: 0
 }
 
 .form-radio-item,
@@ -184,13 +162,6 @@
 .form-multiple-column .form-radio-item,
 .form-multiple-column .form-checkbox-item {
   width: 150px
-}
-
-// should work on selectors like this
-// .form-multiple-column[data-columncount="2"] .form-radio-item,
-// .form-multiple-column[data-columncount="2"] .form-checkbox-item{//   width: 45%;//}.form-radio-item label, .form-checkbox-item
-label {
-  margin-left: 5px
 }
 
 .form-radio-item br,
@@ -210,7 +181,7 @@ label {
 
 .form-submit-button::-moz-focus-inner,
 .form-submit-reset::-moz-focus-inner {
-  border: 0px;
+  border: 0;
   padding: 1px 6px
 }
 
@@ -221,7 +192,7 @@ label {
 }
 
 .form-submit-print::-moz-focus-inner {
-  padding: 0px 6px
+  padding: 0 6px
 }
 
 .form-submit-print {
@@ -325,6 +296,7 @@ label {
 }
 
 .form-label-top {
+  color: $text-color;
   margin-bottom: 6px;
   display: block;
   white-space: normal
@@ -734,21 +706,6 @@ label {
   width: 224px
 }
 
-.qq-upload-button {
-  background: #ffa84c;
-  background: -moz-linear-gradient(top, #FBCB5D 0%, #EFA003 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FBCB5D), color-stop(100%, #EFA003));
-  color: #FFF;
-  display: block;
-  font-size: 16px;
-  padding: 8px 0;
-  text-align: center;
-  text-shadow: 0 -1px #C64F00;
-  border: 1px solid #C64F00;
-  -moz-border-radius: 5px 5px;
-  -webkit-border-radius: 5px 5px;
-  border-radius: 5px 5px
-}
 .fb-login-wrapper {
 }
 
@@ -802,15 +759,6 @@ label {
     outline: rgb(59, 153, 252) auto 5px;
     border: 1px solid lightgrey !important
   }
-}
-
-.braintree-addons-box {
-  border-radius: 5px;
-  background-color: #efefef;
-  padding: 5px;
-  margin: 6px 0 0 18px;
-  font-size: 12px;
-  line-height: 16px
 }
 
 #recaptcha_logo {
@@ -1113,14 +1061,6 @@ label {
   .new-file-list li:first-child {
     border-top: 1px solid #eee;
     margin-top: 12px
-  }
-
-  .new-file-progress-bar {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    height: 2px;
-    background-color: #3f91f7
   }
 
   .new-file-abort {
@@ -1454,95 +1394,6 @@ label {
       font-size: 12px
     }
   }
-
-  div.calendar {
-    color: #000;
-    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5)
-  }
-
-  div.calendar.popup {
-    margin-left: -40px;
-    margin-top: -100px;
-    z-index: 100000
-  }
-
-  div.calendar td.weekend {
-    background: #b5cfe9
-  }
-
-  div.calendar .today {
-    background: #f9621a !important
-  }
-
-  div.calendar .title,
-  div.calendar .button {
-    color: #f9621a
-  }
-
-  div.calendar table {
-    background-color: #eee;
-    border: 1px solid #aaa;
-    border-collapse: collapse
-  }
-
-  div.calendar thead {
-    background-color: white
-  }
-
-  div.calendar td,
-  div.calendar th {
-    font-size: 11px;
-    padding: 3px;
-    text-align: center
-  }
-
-  div.calendar td.title {
-    font-weight: bold
-  }
-
-  div.calendar th {
-    background: #ddd;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    font-weight: bold;
-    color: #555
-  }
-
-  div.calendar tr.days td {
-    width: 2em;
-    color: #555;
-    text-align: center;
-    cursor: pointer
-  }
-
-  div.calendar tr.days td:hover:not(.unselectable),
-  div.calendar td.button:hover:not(.unselectable) {
-    background-color: #34ABFA;
-    cursor: pointer
-  }
-
   .unselectable {
     cursor: default !important
-  }
-
-  div.calendar tr.days td:active div.calendar td.button:active {
-    background-color: #cde
-  }
-
-  div.calendar tr.days td.selected {
-    font-weight: bold;
-    background-color: #fff;
-    color: #000
-  }
-
-  div.calendar tr.days td.today {
-    font-weight: bold;
-    color: #D50000
-  }
-
-  div.calendar tr.days td.otherDay {
-    color: #bbb
   }

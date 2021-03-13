@@ -14,23 +14,22 @@
 }
 
 .navigation li a:link, .navigation li a:visited {
+	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-bottom: 1px;
 	width: auto;
-	font-size: 16px;
-	color: #grey-color-dark;
+	font-size: 1rem;
+	color: $grey-color-dark;
 	text-align: left;
-	padding-left: 10px !important;
-	display: block;
 	transition: all 200ms;
 	-webkit-transition: all 200ms;
 	-moz-transition: all 200ms;
 	-o-transition: all 200ms;
-	padding: 5px 10px 5px 0;
+	padding: 5px 10px 5px 10px;
 }
 
 .navigation li a:hover, .navigation li a.active {
-	background: #1b1b1b;
-	color: #fff
+	background: $brand-color;
+	color: $white;
 }
