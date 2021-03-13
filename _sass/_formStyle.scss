@@ -234,7 +234,7 @@
   text-align: center;
   font-size: 9px;
   color: #999;
-  font-weight: 300
+  font-weight: $font-weight-normal;
 }
 
 .form-subHeader {
@@ -459,7 +459,7 @@
 
 .form-product-options-text,
 .form-product-child-label {
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   word-wrap: break-word
 }
 
