@@ -544,7 +544,7 @@ language: 'ru'
                         const dob = new Date(2014, 6, 1);
                         const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
                         const howMuch = today.getFullYear() - dob.getFullYear();
-                        window.document.getElementById('howMuch').text = howMuch;
+                        window.document.getElementById('howMuch').innerHTML = howMuch;
                 </script>
             </div>
         </section>
