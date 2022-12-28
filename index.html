@@ -22,7 +22,7 @@ language: 'ru'
             <h3 class="section__title">Обо мне</h3>
             <div class="section__content no-padding">
                 <p> Веб-разработчик </p>
-                <p>На данный момент имеется 7.5 лет в разработке, где 3 года в качестве fullstack-разработчика и 4.5
+                <p>На данный момент имеется <span id="howMuch"> </span> лет в разработке, где 3 года в качестве fullstack-разработчика и 4.5
                     года -
                     frontend-разработчик.</p>
                 <p>
@@ -538,6 +538,14 @@ language: 'ru'
 
                 <script>JotForm.ownerView = true;</script>
                 <script>JotForm.forwardToEu = true;</script>
+                
+                <script>const now = new Date();
+                        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+                        const dob = new Date(2014, 6, 1);
+                        const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+                        const howMuch = today.getFullYear() - dob.getFullYear();
+                        window.document.getElementById('howMuch').text = howMuch;
+                </script>
             </div>
         </section>
     </div>
