@@ -74,7 +74,7 @@ $header-height: 2.5rem;
 }
 
 @media screen and (min-width: $on-laptop) {
-	.page-content > .wrapper > .main-content {
+	.page-content > .wrapper  .main-content {
 	  margin-top: $header-height;
 	}
   
