@@ -71,3 +71,15 @@
 		}
 	}
 }
+
+@media screen and (min-width: $on-laptop) {
+	.page-content > .wrapper {
+	  margin-top: $header-height;
+	}
+  
+	.site-header {
+	  position: fixed;
+	  width: 100vw;
+	  z-index: 100;
+	}
+  };
