@@ -3,12 +3,12 @@
 }
 
 .form-label-left {
-  width: 150px !important;
+  width: 9.375rem !important;
 }
 
 .form-line {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .form-label-right {
@@ -16,7 +16,7 @@
 }
 
 .form-all {
-  width: 1000px;
+  width: 62.5rem;
   color: Black !important;
 }
 
@@ -30,19 +30,19 @@
 
 .form-all {
   width: 100%;
-  max-width: 1000px;
+  max-width: 62.5rem;
 }
 
 .form-label-left,
 .form-label-right {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .form-label {
   font-family: $base-font-family;
   font-size: $font-size-sm;
   color: $text-color;
-  padding-top: 15px;
+  padding-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -224,7 +224,7 @@
 .form-all .form-submit-reset,
 .form-all .form-submit-print {
   font-size: 1em;
-  padding: 6px 12px;
+  padding: .375rem .75rem;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 3px;
@@ -486,5 +486,5 @@ li[data-type="control_image"] img {
 }
 
 .form-submit-button:hover {
-  background: #fff !important;
+  background: $white !important;
 }

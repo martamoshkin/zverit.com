@@ -24,9 +24,7 @@ a {
 	color: $grey-color-dark;
 }
 
-//TODO fix
 ul li {
-	font-size: 16px!important;
 	padding: 0!important;
 }
 
@@ -36,7 +34,7 @@ input, textarea, button {
 
 ol li {
 	list-style: decimal inside;
-	padding: 5px 0;
+	padding: 6px 0;
 }
 
 .no-padding {

@@ -7,8 +7,8 @@ $header-height: 2.5rem;
 	position: relative;
 
 	&__blog-link {
-		font-size: 1rem;
 		line-height: $header-height;
+		margin-left: 1.25rem;
 		margin-bottom: 0;
 		float: right;
 		text-transform: uppercase;
@@ -27,7 +27,7 @@ $header-height: 2.5rem;
 	&__lang-link {
 		position: absolute;
 		right: 0;
-		line-height: 40px;
+		line-height: 2.5rem;
 		letter-spacing: -1px;
 		margin-bottom: 0;
 		margin-right: 20px;

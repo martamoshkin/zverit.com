@@ -1,13 +1,13 @@
 .contact {
 	color: $grey-color-dark;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	padding-bottom: .3125rem;
+	padding-top: .3125rem;
 
 	&__link {
 		display: block;
 		float: right;
 		color: $grey-color-dark;
-		padding-left: 20px;
+		padding-left: 1.25rem;
 	}
 
 	&__type {
